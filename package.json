@@ -1,0 +1,41 @@
+{
+  "name": "smtp-support-sender",
+  "version": "1.0.0",
+  "description": "Production bulk support-reply email sending system",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "migrate": "ts-node src/cli.ts migrate",
+    "seed:mailboxes": "ts-node src/cli.ts seed-mailboxes",
+    "import:csv": "ts-node src/cli.ts import-csv",
+    "import:json": "ts-node src/cli.ts import-json",
+    "worker:start": "ts-node src/cli.ts worker",
+    "health": "ts-node src/cli.ts health",
+    "resume:mailbox": "ts-node src/cli.ts resume-mailbox",
+    "recover:locks": "ts-node src/cli.ts recover-locks",
+    "start": "node dist/cli.js worker",
+    "prod:migrate": "node dist/cli.js migrate",
+    "prod:seed": "node dist/cli.js seed-mailboxes",
+    "prod:import:csv": "node dist/cli.js import-csv",
+    "prod:import:json": "node dist/cli.js import-json",
+    "prod:health": "node dist/cli.js health",
+    "prod:resume:mailbox": "node dist/cli.js resume-mailbox",
+    "prod:recover:locks": "node dist/cli.js recover-locks"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.7",
+    "nodemailer": "^6.9.16",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.12",
+    "@types/nodemailer": "^6.4.17",
+    "@types/pg": "^8.11.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

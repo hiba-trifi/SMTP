@@ -1,0 +1,4 @@
+recipient_email,recipient_name,subject,message,ticket_id
+alice@example.com,Alice Johnson,Re: Your Support Request #1001,"Thank you for reaching out. We have resolved your issue regarding account access.",1001
+bob@example.com,Bob Smith,Re: Your Support Request #1002,"We are looking into the billing discrepancy you reported. Expect an update within 24 hours.",1002
+carol@example.com,Carol White,Re: Your Support Request #1003,"Your feature request has been logged and forwarded to the product team.",1003

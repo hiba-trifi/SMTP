@@ -1,0 +1,23 @@
+[
+  {
+    "recipient_email": "alice@example.com",
+    "recipient_name": "Alice Johnson",
+    "subject": "Re: Your Support Request #1001",
+    "message": "Thank you for reaching out. We have resolved your issue regarding account access.",
+    "ticket_id": "1001"
+  },
+  {
+    "recipient_email": "bob@example.com",
+    "recipient_name": "Bob Smith",
+    "subject": "Re: Your Support Request #1002",
+    "message": "We are looking into the billing discrepancy you reported. Expect an update within 24 hours.",
+    "ticket_id": "1002"
+  },
+  {
+    "recipient_email": "carol@example.com",
+    "recipient_name": "Carol White",
+    "subject": "Re: Your Support Request #1003",
+    "message": "Your feature request has been logged and forwarded to the product team.",
+    "ticket_id": "1003"
+  }
+]
